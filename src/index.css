@@ -1,1 +1,87 @@
 @import "tailwindcss";
+
+@theme {
+    --color-base-100: oklch(100% 0 0);
+    --color-base-200: oklch(98.462% 0.001 247.838);
+    --color-base-300: oklch(92.462% 0.001 247.838);
+    --color-neutral: oklch(55% 0.046 257.417);
+
+
+    --color-primary: oklch(90% 0.063 306.703);
+    --color-secondary: oklch(89% 0.058 10.001);
+    --color-accent: oklch(90% 0.093 164.15);
+
+    --color-error: oklch(80% 0.114 19.571);
+    --color-warning: oklch(83% 0.128 66.29);
+    --color-info: oklch(86% 0.127 207.078);
+    --color-success: oklch(87% 0.15 154.449);
+
+
+    --font-poppins: 'poppins';
+    --font-quicksand: 'quicksand';
+}
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-poppins;
+    }
+
+
+    p,
+    a,
+    button,
+    label,
+    span {
+        @apply font-quicksand;
+    }
+
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 300;
+    src: url('./assets/fonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src: url('./assets/fonts/Poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: url('./assets/fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    font-weight: 300;
+    src: url('./assets/fonts/Quicksand/static/Quicksand-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    font-weight: 400;
+    src: url('./assets/fonts/Quicksand/static/Quicksand-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    src: url('./assets/fonts/Quicksand/static/Quicksand-Medium.ttf');
+}
